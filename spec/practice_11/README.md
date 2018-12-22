@@ -31,7 +31,7 @@ introduce方法返回一个字符串形如：
 >My name is Tom. I am 21 years old. I am a Teacher. I teach Class 2, 3.
 
 如果classes的长度为0，就会返回：
-
+  
 >My name is Tom. I am 21 years old. I am a Teacher. I teach No Class.
 
 Teacher还有一个isTeaching方法，传入一个学生，返回true/false。只要学生在classes中的任一个class中，就是在教他。
