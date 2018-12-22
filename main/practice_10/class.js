@@ -14,6 +14,12 @@ class Class {
   appendMember(student) {
     student.klass = this;
   }
+  isIn(student) {
+    if (student.klass === this) {
+      return true;
+    }
+    return false;
+  }
 }
 
 module.exports = Class;

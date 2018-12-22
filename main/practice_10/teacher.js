@@ -12,6 +12,9 @@ class Teacher extends Person {
     let klassesNumber = this.klasses.map(klass => klass.number);
     return `${super.introduce()} I am a Teacher. I teach Class ${klassesNumber.join(', ')}.`;
   }
+  isTeaching(student) {
+    return this.klasses.some(klass => klass.isIn(student));
+  }
 }
 
 module.exports = Teacher;
